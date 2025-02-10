@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-import "easymde/dist/easymde.min.css";
+// import "easymde/dist/easymde.min.css";
 
 const workSans = localFont({
   src: [
