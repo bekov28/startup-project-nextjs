@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import { Toast } from "@/components/ui/toast";
+import { Toaster } from "@/components/ui/toaster";
 // import "easymde/dist/easymde.min.css";
 
 const workSans = localFont({
@@ -66,7 +68,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={workSans.variable}>{children}</body>
+      <body className={workSans.variable}>
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }
