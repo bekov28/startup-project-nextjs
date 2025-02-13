@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   images: {
     dangerouslyAllowSVG: true,
+    domains: ["placehold.co"],
     remotePatterns: [
       {
         protocol: "https",
@@ -19,5 +20,4 @@ const nextConfig: NextConfig = {
     buildActivityPosition: "bottom-right",
   },
 };
-
-export default nextConfig;
+module.exports = nextConfig;
