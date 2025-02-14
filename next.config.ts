@@ -26,4 +26,4 @@ const nextConfig: NextConfig = {
     buildActivityPosition: "bottom-right",
   },
 };
-module.exports = nextConfig;
+export default nextConfig; 
