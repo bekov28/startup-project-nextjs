@@ -14,7 +14,7 @@
 
 // Source: schema.json
 export type SanityImagePaletteSwatch = {
-  _type: "sanity.imagePaletteSwatch";
+  _type: "sanity.imagePaletteSwatch";s
   background?: string;
   foreground?: string;
   population?: number;
