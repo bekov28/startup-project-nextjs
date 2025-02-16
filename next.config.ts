@@ -25,5 +25,14 @@ const nextConfig: NextConfig = {
     buildActivity: true,
     buildActivityPosition: "bottom-right",
   },
+  webpack(config, { isServer }) {
+    if (!isServer) {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        'lucide-react': require.resolve('lucide-react'),
+      };
+    }
+    return config;
+  },
 };
 export default nextConfig;
